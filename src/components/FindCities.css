@@ -1,0 +1,38 @@
+.card-container {
+   margin-top: 100px;
+}
+
+.card-Heading{
+    text-align: center;
+    color: #222;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.cards{
+    border:none
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+a:hover{
+    color: #FFF;
+}
+.cardText{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 992px) {
+    .card-row{
+        row-gap: 20px;
+    }
+}

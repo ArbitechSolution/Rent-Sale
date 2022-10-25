@@ -1,0 +1,26 @@
+.W-container{
+    background-color: #fff;
+    margin-top: 70px;
+    
+}
+
+.W-container1 h1{
+font-size: 22px;
+letter-spacing: .025em;
+font-weight: 700;
+}
+
+.W-container1 p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.8;
+}
+.W-container1{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 1.25rem;
+    padding: 30px;
+
+}
+

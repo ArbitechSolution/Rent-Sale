@@ -1,0 +1,31 @@
+.Properties-Sale{
+    margin-top: 100px;
+}
+
+.nav-tabs .nav-item .nav-link {
+    background-color: white;
+    color: black;
+    
+  }
+
+  .nav-tabs .nav-item .nav-link:hover {
+  background-color: rgb(28,62,116);
+  color: white;
+}
+
+.nav-tabs .nav-item .nav-link.active{
+    background-color: rgb(28,62,116); 
+    color: white;
+    
+  }
+
+  .header-text{
+    color:rgb(28,62,116)
+  }
+  
+
+
+
+
+    
+

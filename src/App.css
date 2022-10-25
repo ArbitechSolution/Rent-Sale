@@ -1,0 +1,15 @@
+.main-container{
+  /* background-image:url("D:\clone\realproperty\public\assets\background-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+  
+}
+
+.firstDiv{
+  background-image:url("../public/assets/industrial\ estate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}

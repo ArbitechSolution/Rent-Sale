@@ -1,0 +1,86 @@
+/* .Navbar{
+    padding-top: 10px;
+} */
+.Navbar {
+  background-color: rgba(45, 43, 43, 0.577);
+  /* opacity: 75%; */
+  /* z-index: -1; */
+}
+/* .offcanvas.offcanvas-start {
+    width:30%;
+    
+} */
+
+.ul-list {
+  list-style-type: none;
+}
+
+.ul-list li a {
+  padding: 15px 0;
+  display: block;
+  position: relative;
+  color: #212529;
+  font-weight: 500;
+}
+.NavbarLinks {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.NavbarLinks:hover {
+  color: #1e3e74;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: 4px solid #1e3e74;
+}
+.navbar-expand {
+  padding-left: 32px;
+}
+
+/* .ToggleLinks{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+} */
+
+.ModalIconText {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  font-size: 1.8rem;
+  /* color: #fff; */
+}
+
+.login-logout-link {
+  font-size: 18px;
+  font-weight: 400;
+}
+.login-logout-link:hover {
+  color: #335ba1;
+  font-size: 20px;
+  font-weight: 800;
+}
+.Modal {
+  text-align: end;
+  padding-right: 80px;
+}
+
+.Modal button {
+  background-color: rgb(28, 62, 116);
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.selectField {
+  width: 55%;
+}
+@media screen and (min-width: 992px) {
+  .toggle {
+    display: none;
+  }
+}
