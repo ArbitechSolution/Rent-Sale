@@ -15,12 +15,8 @@ import Button from "@mui/material/Button";
 function AddProperty() {
   const [buttonColor, setButtonColor] = useState("");
   const [buttonColorDown, setButtonColorDown] = useState("");
-  const [buttonColorLowerDown, setButtonColorLowerDown] = useState("");
-  const [buttonColorLowerDownOne, setButtonColorLowerDownOne] = useState("");
   const [buttonColorLowerDownTwo, setButtonColorLowerDownTwo] = useState("");
-  const inputProps = {
-    step: 1000,
-  };
+
   const [selectedValue, setSelectedValue] = useState("New Member (Free)");
   const [checked, setChecked] = useState(true);
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -372,7 +368,7 @@ function AddProperty() {
               id="uncontrolled-tab-example"
               className="mb-3"
             >
-              <Tab className="RentTab" eventKey="Buy" title="Buy">
+              <Tab className="RentTab" eventKey="Buy" title="Photos">
                 <WovenImageList />
               </Tab>
             </Tabs>

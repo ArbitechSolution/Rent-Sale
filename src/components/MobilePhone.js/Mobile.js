@@ -39,7 +39,7 @@ const Input = (props) => {
 const PhoneNumber = (props) => {
   return (
     <Input
-      label={"Mobile Phone"}
+      label={"Mobile"}
       req={true}
       helperText={""}
       error={true}
