@@ -1,97 +1,112 @@
-.addProperty-h3{
-    color: #222;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 700;
-    letter-spacing: .025em;
-    /* font-size: 20px; */
-    line-height: 1.6;
+.addProperty-h3 {
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  /* font-size: 20px; */
+  line-height: 1.6;
 }
 .act-title {
-    color: #333;
-    margin-bottom: 0;
-    line-height: 1;
-    font-size: 22px;
-    font-weight: 400;
+  color: #333;
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .addproperty-span {
-   
-    text-align: left;
-    font-size: 12px;
-    margin-bottom: 5px;
-    font-weight: 600;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
-.btn-sale{
-    font-size: 14px;
-    border: 1px solid #E6E7E9;
-    /* border-color: #E6E7E9; */
-    background-color: #E6E7E9;
-    padding: 8px 75px
+.btn-sale {
+  font-size: 14px;
+  border: 1px solid #e6e7e9;
+  /* border-color: #E6E7E9; */
+  background-color: #e6e7e9;
+  padding: 8px 75px;
 }
-.btn-sale:hover{
-    font-size: 14px;
-    border: 1px solid #00ba74;
-    /* border-color: #E6E7E9; */
-    background-color: #ffffff;
-    padding: 8px 75px
+.btn-sale:hover {
+  font-size: 14px;
+  border: 1px solid #00ba74;
+  /* border-color: #E6E7E9; */
+  background-color: #ffffff;
+  padding: 8px 75px;
 }
-.btn-sale-active{
-    font-size: 14px;
-    border: 1px solid #00ba74;
-    /* border-color: #E6E7E9; */
-    background-color: #00ba74;
-    padding: 8px 75px;
-    -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
-    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
-}
-
-.btn-sale-down{
-    font-size: 14px;
-    border: 1px solid #E6E7E9;
-    /* border-color: #E6E7E9; */
-    background-color: #E6E7E9;
-    padding: 8px 0px
-}
-.btn-sale-down:hover{
-    font-size: 14px;
-    border: 1px solid #00ba74;
-    /* border-color: #E6E7E9; */
-    background-color: #ffffff;
-    padding: 8px 0px
+.btn-sale-active {
+  font-size: 14px;
+  border: 1px solid #00ba74;
+  /* border-color: #E6E7E9; */
+  background-color: #00ba74;
+  padding: 8px 75px;
+  -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+  box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
 }
 
-.btn-sale-active-down{
-    font-size: 14px;
-    border: 1px solid #00ba74;
-    /* border-color: #E6E7E9; */
-    background-color: #00ba74;
-    padding: 8px 0px;
-    -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
-    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+.btn-sale-down {
+  font-size: 14px;
+  border: 1px solid #e6e7e9;
+  /* border-color: #E6E7E9; */
+  background-color: #e6e7e9;
+  padding: 8px 0px;
+}
+.btn-sale-down:hover {
+  font-size: 14px;
+  border: 1px solid #00ba74;
+  /* border-color: #E6E7E9; */
+  background-color: #ffffff;
+  padding: 8px 0px;
 }
 
-.btn-sale-down-lowerDOwn{
-    font-size: 14px;
-    border: 1px solid #E6E7E9;
-    /* border-color: #E6E7E9; */
-    background-color: #E6E7E9;
-    padding: 8px 15px
-}
-.btn-sale-down-lowerDOwn:hover{
-    font-size: 14px;
-    border: 1px solid #00ba74;
-    /* border-color: #E6E7E9; */
-    background-color: #ffffff;
-    padding: 8px 15px
+.btn-sale-active-down {
+  font-size: 14px;
+  border: 1px solid #00ba74;
+  /* border-color: #E6E7E9; */
+  background-color: #00ba74;
+  padding: 8px 0px;
+  -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+  box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
 }
 
-.btn-sale-down-lowerDOwn-Active{
-    font-size: 14px;
-    border: 1px solid #00ba74;
-    /* border-color: #E6E7E9; */
-    background-color: #00ba74;
-    padding: 8px 15px;
-    -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
-    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+.btn-sale-down-lowerDOwn {
+  font-size: 14px;
+  border: 1px solid #e6e7e9;
+  /* border-color: #E6E7E9; */
+  background-color: #e6e7e9;
+  padding: 8px 15px;
+}
+.btn-sale-down-lowerDOwn:hover {
+  font-size: 14px;
+  border: 1px solid #00ba74;
+  /* border-color: #E6E7E9; */
+  background-color: #ffffff;
+  padding: 8px 15px;
+}
+
+.btn-sale-down-lowerDOwn-Active {
+  font-size: 14px;
+  border: 1px solid #00ba74;
+  /* border-color: #E6E7E9; */
+  background-color: #00ba74;
+  padding: 8px 15px;
+  -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+  box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+}
+.btn-submit {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #00ba74 !important;
+  background-color: #00ba74 !important;
+  padding: 8px 15px !important;
+  -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+  box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+}
+.btn-submit:hover {
+  font-size: 14px;
+  border: 1px solid #00ba74 !important;
+  background-color: #ffffff !important;
+  color: #00ba74 !important;
+  padding: 8px 15px !important;
 }

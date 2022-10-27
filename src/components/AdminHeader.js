@@ -53,7 +53,7 @@ let [isColor, setIsColor] = useState("Add Property")
             </ListItemIcon>
             <ListItemText primary="Dashboard" />
           </ListItem>
-          <ListItem button key="Messages" primaryTypographyProps={{fontSize: '15px'}}>
+          <ListItem button key="Messages" primarytypographyprops={{fontSize: '15px'}}>
             <ListItemIcon className=" d-flex justify-content-center">
               <MailOutlineIcon style={{ color: "#000" }} className="arrow-up"/>
             </ListItemIcon>
@@ -65,7 +65,7 @@ let [isColor, setIsColor] = useState("Add Property")
             <ListItemIcon className=" d-flex justify-content-center">
               <FaBuffer style={{ color: "#000" }} className="arrow-up"/>
             </ListItemIcon>
-            <ListItemText primary="My Properties" primaryTypographyProps={{fontSize: '15px'}}/>
+            <ListItemText primary="My Properties" primarytypographyprops={{fontSize: '15px'}}/>
           </ListItem>
 
         <ListItem button key="Add Property"
@@ -75,21 +75,21 @@ let [isColor, setIsColor] = useState("Add Property")
           <ListItemIcon className=" d-flex justify-content-center">
             <GrAddCircle style={{ color: "#000" }} className="arrow-up"/>
           </ListItemIcon>
-          <ListItemText primary="Add Property"  primaryTypographyProps={{fontSize: '15px'}}/>
+          <ListItemText primary="Add Property"  primarytypographyprops={{fontSize: '15px'}}/>
         </ListItem>
 
         <ListItem button key="My Profile">
           <ListItemIcon className=" d-flex justify-content-center">
             <PersonOutlineOutlinedIcon style={{ color: "#000" }} className="arrow-up"/>
           </ListItemIcon>
-          <ListItemText primary="My Profile"  primaryTypographyProps={{fontSize: '15px'}}/>
+          <ListItemText primary="My Profile"  primarytypographyprops={{fontSize: '15px'}}/>
         </ListItem>
 
         <ListItem button key="Logout">
           <ListItemIcon className=" d-flex justify-content-center">
             <LogoutIcon style={{ color: "#000" }} className="arrow-up"/>
           </ListItemIcon>
-          <ListItemText primary="Logout"  primaryTypographyProps={{fontSize: '15px'}}/>
+          <ListItemText primary="Logout"  primarytypographyprops={{fontSize: '15px'}}/>
         </ListItem>
       </List>
     </div>

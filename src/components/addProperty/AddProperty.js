@@ -12,6 +12,7 @@ import FormLabel from "@mui/material/FormLabel";
 import PhoneNumber from "../MobilePhone.js/Mobile";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
+import ImageUpload from "./imageUpload";
 function AddProperty() {
   const [buttonColor, setButtonColor] = useState("");
   const [buttonColorDown, setButtonColorDown] = useState("");
@@ -48,7 +49,7 @@ function AddProperty() {
         </div>
         <div className="col-lg-8 ps-md-4 ">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-3">
               <div className="d-grid gap-2">
                 <button
                   className={
@@ -62,7 +63,7 @@ function AddProperty() {
                 </button>
               </div>
             </div>
-            <div className="col-lg-3 ps-md-4">
+            <div className="col-3 ps-md-4 ">
               <div className="d-grid gap-2">
                 <button
                   primary="Rent"
@@ -85,7 +86,7 @@ function AddProperty() {
         </div>
         <div className="col-lg-8 ps-md-4">
           <div className="row">
-            <div className="col-lg-2">
+            <div className="col-2">
               <div className="d-grid gap-2">
                 <button
                   className={
@@ -101,7 +102,7 @@ function AddProperty() {
                 </button>
               </div>
             </div>
-            <div className="col-lg-2">
+            <div className="col-2">
               <div className="d-grid gap-2">
                 <button
                   primary="Plots"
@@ -116,7 +117,7 @@ function AddProperty() {
                 </button>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-3">
               <div className="d-grid gap-2">
                 <button
                   primary="Commercials"
@@ -295,8 +296,8 @@ function AddProperty() {
           <span className="addproperty-span">City: *</span>
         </div>
         <div className="col-lg-4 ps-md-4 mt-1">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Location</option>
+          <select className="form-select" aria-label="Default select example">
+            <option defaultValue>Location</option>
             <option value="1">Sheikhupura</option>
             <option value="2">Saggian</option>
             <option value="2">Multan Road</option>
@@ -369,7 +370,8 @@ function AddProperty() {
               className="mb-3"
             >
               <Tab className="RentTab" eventKey="Buy" title="Photos">
-                <WovenImageList />
+                {/* <WovenImageList /> */}
+                <ImageUpload />
               </Tab>
             </Tabs>
           </div>
@@ -385,148 +387,83 @@ function AddProperty() {
 
       <div className="row">
         <div className="col-lg-12 ps-md-4">
-          <h5>Membership Status :</h5>
+          <h5>Owner Details :</h5>
         </div>
         <div className="col-lg-6">
           <div className="mb-3">
-            <FormControl>
-              <RadioGroup
-                row
-                aria-labelledby="demo-row-radio-buttons-group-label"
-                name="row-radio-buttons-group"
-                defaultValue={"New Member (Free)"}
-              >
-                <FormControlLabel
-                  value="Existing Member"
-                  checked={selectedValue === "Existing Member"}
-                  onChange={handleChange}
-                  control={<Radio />}
-                  label="Existing Member"
-                />
-                <FormControlLabel
-                  value="New Member (Free)"
-                  checked={selectedValue === "New Member (Free)"}
-                  onChange={handleChange}
-                  control={<Radio />}
-                  label="New Member (Free)"
-                />
-              </RadioGroup>
-            </FormControl>
-            {selectedValue && selectedValue == "Existing Member" ? (
-              <>
-                <div class="form-outline mb-4 mt-4">
-                  <label class="form-label" for="loginName">
-                    Email or username
-                  </label>
-                  <input
-                    type="email"
-                    id="loginName"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="loginPassword">
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    id="loginPassword"
-                    class="form-control"
-                    required
-                  />
-                </div>
-              </>
-            ) : (
-              <>
-                <div class="form-outline mb-4 mt-4">
-                  <label class="form-label" for="loginName">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="loginName"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-outline mb-4 mt-4">
-                  <label class="form-label" for="loginName">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="loginName"
-                    class="form-control"
-                    required
-                  />
-                </div>
+            <div class="form-outline mb-4 mt-4">
+              <label class="form-label" for="loginName">
+                Full Name
+              </label>
+              <input type="text" id="loginName" class="form-control" required />
+            </div>
+            <div class="form-outline mb-4 mt-4">
+              <label class="form-label" for="loginName">
+                Email
+              </label>
+              <input
+                type="email"
+                id="loginName"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-outline mb-4 mt-4">
+              <label class="form-label" for="loginName">
+                Address
+              </label>
+              <input type="text" id="loginName" class="form-control" required />
+            </div>
 
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="loginPassword">
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    id="loginPassword"
-                    class="form-control"
-                    required
+            <div class="form-outline mb-4">
+              <PhoneNumber />
+            </div>
+            <div class="form-outline mb-4">
+              <FormControl>
+                <RadioGroup
+                  row
+                  aria-labelledby="demo-row-radio-buttons-group-label"
+                  name="row-radio-buttons-group"
+                  defaultValue={"Individual"}
+                >
+                  <FormControlLabel
+                    value="Individual"
+                    control={<Radio />}
+                    label="Individual"
                   />
-                </div>
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="loginPassword">
-                    Password Repeat
-                  </label>
-                  <input
-                    type="password"
-                    id="loginPassword"
-                    class="form-control"
-                    required
+                  <FormControlLabel
+                    value="Agent"
+                    control={<Radio />}
+                    label="Agent"
                   />
-                </div>
-                <div class="form-outline mb-4">
-                  <PhoneNumber />
-                </div>
-                <div class="form-outline mb-4">
-                  <FormControl>
-                    <RadioGroup
-                      row
-                      aria-labelledby="demo-row-radio-buttons-group-label"
-                      name="row-radio-buttons-group"
-                      defaultValue={"Individual"}
-                    >
-                      <FormControlLabel
-                        value="Individual"
-                        control={<Radio />}
-                        label="Individual"
-                      />
-                      <FormControlLabel
-                        value="Agent"
-                        control={<Radio />}
-                        label="Agent"
-                      />
-                    </RadioGroup>
-                  </FormControl>
-                </div>
-                <div class="form-outline mb-4">
-                  <Checkbox
-                    // {...label}
-                    checked={checked}
-                    onChange={handleChecked}
-                    defaultChecked
-                  />
-                  {/* <Checkbox {...label} defaultChecked size="small" /> */}
-                  <label class="form-label" for="loginPassword">
-                    By logging in, you agree to realproperty terms & conditons
-                  </label>
-                </div>
-              </>
-            )}
+                </RadioGroup>
+              </FormControl>
+            </div>
+            <div class="form-outline mb-4">
+              <Checkbox
+                // {...label}
+                checked={checked}
+                onChange={handleChecked}
+                defaultChecked
+              />
+              {/* <Checkbox {...label} defaultChecked size="small" /> */}
+              <label class="form-label" for="loginPassword">
+                By logging in, you agree to realproperty terms & conditons
+              </label>
+            </div>
           </div>
         </div>
       </div>
       <div className="form-outline mb-4 d-flex justify-content-end">
-        <Button variant="contained">Submit</Button>
+        <Button variant="contained" className="btn-submit">
+          Submit
+        </Button>
+      </div>
+      <div className="mt-2 mb-4">
+        <b>
+          Note: You shall not be able to alter the (Property for, Type, City and
+          Location) fields after you submit this form.
+        </b>
       </div>
     </div>
   );
